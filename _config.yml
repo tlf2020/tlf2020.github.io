@@ -1,6 +1,6 @@
 # Site/SEO settings
 email: hello@tlf20.com
-baseurl: "www.tlf20.com"
+baseurl: "https://www.tlf20.com"
 permalink: /:year/:month/:day/:title/
 google_analytics: 
 
