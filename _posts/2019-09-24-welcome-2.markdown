@@ -1,0 +1,20 @@
+---
+title: Welcome
+subtitle: Welcome post
+layout: default
+modal-id: 6
+date: 2019-09-24
+img: roundicons.png
+thumbnail: roundicons-thumbnail.png
+alt: image-alt
+client: Start Bootstrap
+category: Welcome
+description: Welcome fellows.
+
+---
+
+- Personal profiles(about.me kind of page dedicated to all 59 fellows)
+- Mention who all referred it, reader reviews
+- Articles about key takeaways from visiting speakers and fellows
+- Articles about technology and self interests (not bound to tech or subjects taught at Plaksha)
+- Images
