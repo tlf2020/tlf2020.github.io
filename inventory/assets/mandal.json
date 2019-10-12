@@ -1,0 +1,23 @@
+{
+    "data": [
+     {
+       "name": "xyz",
+       "stateId": 31,
+       "districtId": 1,
+       "constituencyId": 1
+     },
+     {
+         
+       "name": "pqr",
+       "stateId": 31,
+       "districtId": 1,
+       "constituencyId": 1
+     },
+     {
+        "name": "abc",
+        "stateId": 33,
+        "districtId": 15,
+        "constituencyId": 2
+     }
+    ]
+    }

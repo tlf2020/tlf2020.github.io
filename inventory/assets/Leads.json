@@ -1,0 +1,199 @@
+[{
+  "ID": "001",
+  "Name": "Rohit ",
+  "LeadStage": "New",
+  "Address": "Delhi",
+  "Organization": "ABC Corporation"
+},
+{
+  "ID": "002",
+  "Name": "Rohan",
+  "LeadStage": "Prospect",
+  "Address": "Mumbai",
+  "Organization": "ABC Corporation"
+},
+{
+  "ID": "003",
+  "Name": "Naveen",
+  "LeadStage": "Qualified",
+  "Address": "Pune",
+  "Organization": "ABC Corporation"
+},
+{
+  "ID": "004",
+  "Name": "Roshan",
+  "LeadStage": "Disqualified",
+  "Address": "Chennai",
+  "Organization": "ABC Corporation"
+},
+{
+  "ID": "006",
+  "Name": "Ritika",
+  "LeadStage": "Customer",
+  "Address": "Ahmedabad",
+  "Organization": "ABC Corporation"
+},
+{
+  "ID": "005",
+  "Name": "Suman",
+  "LeadStage": "Disqualified",
+  "Address": "Pune",
+  "Organization": "ABC Corporation"
+},
+{
+  "ID": "006",
+  "Name": "Ritika",
+  "LeadStage": "Customer",
+  "Address": "Ahmedabad",
+  "Organization": "ABC Corporation"
+},
+{
+  "ID": "007",
+  "Name": "Pooja",
+  "LeadStage": "Qualified",
+  "Address": "Hyderabad",
+  "Organization": "ABC Corporation"
+},
+{
+  "ID": "008",
+  "Name": "Nita",
+  "LeadStage": "Qualified",
+  "Address": "Amritsar",
+  "Organization": "ABC Corporation"
+},{
+  "ID": "009",
+  "Name": "Rohini",
+  "LeadStage": "New",
+  "Address": "Delhi",
+  "Organization": "ABC Corporation"
+},
+{
+  "ID": "010",
+  "Name": "Rohani",
+  "LeadStage": "Prospect",
+  "Address": "Mumbai",
+  "Organization": "ABC Corporation"
+},
+{
+  "ID": "011",
+  "Name": "Newton",
+  "LeadStage": "Qualified",
+  "Address": "Pune",
+  "Organization": "ABC Corporation"
+},
+{
+  "ID": "012",
+  "Name": "Einstein",
+  "LeadStage": "Disqualified",
+  "Address": "Chennai",
+  "Organization": "ABC Corporation"
+},
+{
+  "ID": "013",
+  "Name": "Leonardo",
+  "LeadStage": "Customer",
+  "Address": "Ahmedabad",
+  "Organization": "ABC Corporation"
+},{
+  "ID": "014",
+  "Name": "Sylvestor",
+  "LeadStage": "New",
+  "Address": "Delhi",
+  "Organization": "ABC Corporation"
+},
+{
+  "ID": "015",
+  "Name": "Sheldon",
+  "LeadStage": "Prospect",
+  "Address": "Mumbai",
+  "Organization": "ABC Corporation"
+},
+{
+  "ID": "016",
+  "Name": "Howard",
+  "LeadStage": "Qualified",
+  "Address": "Pune",
+  "Organization": "ABC Corporation"
+},
+{
+  "ID": "017",
+  "Name": "Raj",
+  "LeadStage": "Disqualified",
+  "Address": "Chennai",
+  "Organization": "ABC Corporation"
+},
+{
+  "ID": "018",
+  "Name": "Charles",
+  "LeadStage": "Customer",
+  "Address": "Ahmedabad",
+  "Organization": "ABC Corporation"
+},{
+  "ID": "019",
+  "Name": "Katherine",
+  "LeadStage": "New",
+  "Address": "Delhi",
+  "Organization": "ABC Corporation"
+},
+{
+  "ID": "020",
+  "Name": "Mario",
+  "LeadStage": "Prospect",
+  "Address": "Mumbai",
+  "Organization": "ABC Corporation"
+},
+{
+  "ID": "021",
+  "Name": "Luigi",
+  "LeadStage": "Qualified",
+  "Address": "Pune",
+  "Organization": "ABC Corporation"
+},
+{
+  "ID": "022",
+  "Name": "David",
+  "LeadStage": "Disqualified",
+  "Address": "Chennai",
+  "Organization": "ABC Corporation"
+},
+{
+  "ID": "023",
+  "Name": "Penny",
+  "LeadStage": "Customer",
+  "Address": "Ahmedabad",
+  "Organization": "ABC Corporation"
+},{
+  "ID": "024",
+  "Name": "Alan",
+  "LeadStage": "New",
+  "Address": "Delhi",
+  "Organization": "ABC Corporation"
+},
+{
+  "ID": "025",
+  "Name": "Harvey",
+  "LeadStage": "Prospect",
+  "Address": "Mumbai",
+  "Organization": "ABC Corporation"
+},
+{
+  "ID": "026",
+  "Name": "Mike",
+  "LeadStage": "Qualified",
+  "Address": "Pune",
+  "Organization": "ABC Corporation"
+},
+{
+  "ID": "028",
+  "Name": "Stuart",
+  "LeadStage": "Disqualified",
+  "Address": "Chennai",
+  "Organization": "ABC Corporation"
+},
+{
+  "ID": "029",
+  "Name": "Theodore",
+  "LeadStage": "Customer",
+  "Address": "Ahmedabad",
+  "Organization": "ABC Corporation"
+}]

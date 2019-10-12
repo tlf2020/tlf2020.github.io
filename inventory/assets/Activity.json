@@ -1,0 +1,36 @@
+[{
+  "ID": "001",
+  "Name": "Had a call",
+  "Time": "07:00"
+},
+{
+  "ID": "002",
+  "Name": "Had a Meeting",
+  "Time": "08:00"
+},
+{
+  "ID": "003",
+  "Name": "Had a call again",
+  "Time": "09:00"
+},
+{
+  "ID": "004",
+  "Name": "Client made a call",
+  "Time": "10:00"
+},
+{
+  "ID": "005",
+  "Name": "Positive Reponse",
+  "Time": "11:00"
+},
+{
+  "ID": "006",
+  "Name": "Customer needs time to decide",
+  "Time": "12:00"
+},
+{
+  "ID": "007",
+  "Name": "Final Price spoken to the customer",
+  "Time": "14:00"
+}
+]
