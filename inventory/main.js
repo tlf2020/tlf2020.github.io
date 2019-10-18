@@ -3786,7 +3786,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div>\r\n    <div class=\"row\">\r\n      <div class=\"col-sm-11\">\r\n  \r\n        <p>Add Assembly Component</p>\r\n  \r\n      </div>\r\n      <div class=\"col-sm-1\">\r\n        <i class=\"fa fa-times\" style=\"float:right; cursor: pointer;\" (click)=\"closeDialog();\"></i>\r\n      </div>\r\n    </div>\r\n  </div>\r\n<button mat-raised-button  (click)=\"addSubAssembly()\">Add More Assemblies</button><br />\r\n"
+module.exports = "<div>\n    <div class=\"row\">\n      <div class=\"col-sm-11\">\n  \n        <p>Add Assembly Component</p>\n  \n      </div>\n      <div class=\"col-sm-1\">\n        <i class=\"fa fa-times\" style=\"float:right; cursor: pointer;\" (click)=\"closeDialog();\"></i>\n      </div>\n    </div>\n  </div>\n<button mat-raised-button  (click)=\"addSubAssembly()\">Add More Assemblies</button><br />\n"
 
 /***/ }),
 
@@ -3863,7 +3863,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div>\r\n  <div class=\"row\">\r\n    <div class=\"col-sm-11\">\r\n\r\n      <b>{{newAssemblyName}}</b>\r\n\r\n    </div>\r\n    <div class=\"col-sm-1\">\r\n      <i class=\"fa fa-times\" style=\"float:right; cursor: pointer;\" (click)=\"closeDialog();\"></i>\r\n    </div>\r\n  </div>\r\n</div>\r\n<form fxLayout=\"column\"  style=\"border: solid 1px lightgrey;border-radius: 7px;\r\n    width: 500px ;float:left\" [formGroup]=\"form\" >\r\n      <br/>\r\n      <h3 style=\"margin-left: 100px;\">Add Subassembly</h3>\r\n      <div formArrayName=\"subAssemblies\"\r\n        *ngFor=\"let item of form.controls['subAssemblies'].controls; let i = index\">\r\n        <div [formGroupName]=\"i\">\r\n          <mat-form-field style=\"margin-left: 5px;margin-right: 5px;width: 300px;\">\r\n            <input type=\"text\"  matInput formControlName=\"subAssembly\" placeholder=\"Enter Subassembly\">\r\n            </mat-form-field>\r\n            <button mat-raised-button  (click)=\"addComponents(item)\"><mat-icon>edit</mat-icon></button>\r\n            <button mat-raised-button style=\"margin-left: 5px;\"\r\n             type=\"button\" (click)=\"deleteRow(i)\"><mat-icon>delete</mat-icon></button>\r\n        </div>\r\n      </div>\r\n      <button mat-raised-button type=\"button\" style=\"margin-left: 25px;width: 400px;margin-bottom: 10px;\"\r\n      (click)=\"addNext()\"><mat-icon>add</mat-icon>Add Next Subassembly</button>\r\n    </form>\r\n"
+module.exports = "<div>\n  <div class=\"row\">\n    <div class=\"col-sm-11\">\n\n      <b>{{newAssemblyName}}</b>\n\n    </div>\n    <div class=\"col-sm-1\">\n      <i class=\"fa fa-times\" style=\"float:right; cursor: pointer;\" (click)=\"closeDialog();\"></i>\n    </div>\n  </div>\n</div>\n<form fxLayout=\"column\"  style=\"border: solid 1px lightgrey;border-radius: 7px;\n    width: 500px ;float:left\" [formGroup]=\"form\" >\n      <br/>\n      <h3 style=\"margin-left: 100px;\">Add Subassembly</h3>\n      <div formArrayName=\"subAssemblies\"\n        *ngFor=\"let item of form.controls['subAssemblies'].controls; let i = index\">\n        <div [formGroupName]=\"i\">\n          <mat-form-field style=\"margin-left: 5px;margin-right: 5px;width: 300px;\">\n            <input type=\"text\"  matInput formControlName=\"subAssembly\" placeholder=\"Enter Subassembly\">\n            </mat-form-field>\n            <form fxLayout=\"column\"  style=\"border: solid 1px lightgrey;border-radius: 7px;\n    \" [formGroup]=\"inventoryForm\" >\n      <br/>\n      <h3 style=\"margin-left: 100px;\">Add Inventory</h3>\n      <div formArrayName=\"inventories\"\n        *ngFor=\"let item of inventoryForm.controls['inventories'].controls; let j = index\">\n        <div [formGroupName]=\"j\">\n          <mat-form-field style=\"margin-left: 5px;margin-right: 5px;width: 300px;\">\n            <input type=\"text\"  matInput formControlName=\"invnetory\" placeholder=\"Enter Subassembly\">\n            </mat-form-field>\n            <button mat-raised-button  (click)=\"addComponents(item)\"><mat-icon>edit</mat-icon></button>\n            <button mat-raised-button style=\"margin-left: 5px;\"\n             type=\"button\" (click)=\"deleteRow(i)\"><mat-icon>delete</mat-icon></button>\n        </div>\n      </div>\n      <button mat-raised-button type=\"button\" style=\"margin-left: 25px;width: 400px;margin-bottom: 10px;\"\n      (click)=\"addNext()\"><mat-icon>add</mat-icon>Add Next Subassembly</button>\n    </form>\n            <button mat-raised-button  (click)=\"addComponents(item)\"><mat-icon>edit</mat-icon></button>\n            <button mat-raised-button style=\"margin-left: 5px;\"\n             type=\"button\" (click)=\"deleteRow(i)\"><mat-icon>delete</mat-icon></button>\n        </div>\n      </div>\n      <button mat-raised-button type=\"button\" style=\"margin-left: 25px;width: 400px;margin-bottom: 10px;\"\n      (click)=\"addNext()\"><mat-icon>add</mat-icon>Add Next Subassembly</button>\n    </form>\n"
 
 /***/ }),
 
@@ -3881,6 +3881,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
 /* harmony import */ var _AddSubAssemblyComponent_AddSubAssemblyComponent_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../AddSubAssemblyComponent/AddSubAssemblyComponent.component */ "./src/app/manufacturing/AddSubAssemblyComponent/AddSubAssemblyComponent.component.ts");
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
+/* harmony import */ var src_app_services_api_urls__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! src/app/services/api.urls */ "./src/app/services/api.urls.ts");
+/* harmony import */ var src_app_services_authentication_user_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! src/app/services/authentication/user.service */ "./src/app/services/authentication/user.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3890,27 +3893,56 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+var __param = (undefined && undefined.__param) || function (paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+};
+
+
+
 
 
 
 
 var AddSubAssemblyComponent = /** @class */ (function () {
-    function AddSubAssemblyComponent(fb, dialog, fbItem, dialogRef) {
+    function AddSubAssemblyComponent(fb, dialog, fbItem, userService, dialogRef, data, fbInventory, fbInventoryItem) {
         this.fb = fb;
         this.dialog = dialog;
         this.fbItem = fbItem;
+        this.userService = userService;
         this.dialogRef = dialogRef;
+        this.data = data;
+        this.fbInventory = fbInventory;
+        this.fbInventoryItem = fbInventoryItem;
+        this.myControl = new _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormControl"]();
+        this.inventoryItemList = [];
     }
     AddSubAssemblyComponent.prototype.ngOnInit = function () {
-        this.newAssemblyName = localStorage.getItem('assemblyName');
+        var _this = this;
+        this.filteredOptions = this.myControl.valueChanges
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["startWith"])(''), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (value) { return _this._filter(value); }));
+        this.newAssemblyName = this.data.assemblyName;
         this.form = this.fb.group({
             subAssemblies: this.fb.array([this.createItem()])
         });
+        this.inventoryForm = this.fbInventory.group({
+            inventories: this.fbInventory.array([this.createInventoryItem()])
+        });
+        console.log(this.data);
     };
     AddSubAssemblyComponent.prototype.addSubAssemblyComponent = function () {
         this.dialog.open(_AddSubAssemblyComponent_AddSubAssemblyComponent_component__WEBPACK_IMPORTED_MODULE_2__["AddSubAssemblyComponentsComponent"], {
             width: '750px',
+            data: {
+                assemblyId: this.data.assemblyId,
+            }
         });
+    };
+    AddSubAssemblyComponent.prototype._filter = function (value) {
+        var filterValue = value.toLowerCase();
+        return this.inventoryItemList.filter(function (inventory) { return inventory.name.toLowerCase().indexOf(filterValue) === 0; });
+    };
+    AddSubAssemblyComponent.prototype.deleteInventoryRow = function (index) {
+        this.form.controls['inventories'].removeAt(index);
     };
     AddSubAssemblyComponent.prototype.deleteRow = function (index) {
         this.form.controls['subAssemblies'].removeAt(index);
@@ -3918,9 +3950,17 @@ var AddSubAssemblyComponent = /** @class */ (function () {
     AddSubAssemblyComponent.prototype.addNext = function () {
         this.form.controls['subAssemblies'].push(this.createItem());
     };
+    AddSubAssemblyComponent.prototype.addNextInventory = function () {
+        this.form.controls['inventories'].push(this.createInventoryItem());
+    };
     AddSubAssemblyComponent.prototype.createItem = function () {
         return this.fbItem.group({
             subAssembly: ['']
+        });
+    };
+    AddSubAssemblyComponent.prototype.createInventoryItem = function () {
+        return this.fbInventoryItem.group({
+            inventory: ['']
         });
     };
     AddSubAssemblyComponent.prototype.closeDialog = function () {
@@ -3931,14 +3971,26 @@ var AddSubAssemblyComponent = /** @class */ (function () {
         localStorage.setItem('subAssemblyName', item.value.subAssembly);
         this.addSubAssemblyComponent();
     };
+    AddSubAssemblyComponent.prototype.getInventoryItems = function () {
+        var _this = this;
+        this.userService.authenticatedGet(src_app_services_api_urls__WEBPACK_IMPORTED_MODULE_5__["ApiUrls"].GetModel('inventoryitem'), {}).subscribe(function (res) {
+            _this.inventoryItemList = res.data;
+        });
+    };
+    AddSubAssemblyComponent.prototype.onStateChange = function (argValue) {
+        this.selectedInventoryItem = this.inventoryItemList.filter(function (inventory) { return inventory.name.toLowerCase().indexOf(argValue.toLowerCase()) === 0; })[0];
+        console.log(this.selectedInventoryItem);
+        this.inventoryItemId = this.selectedInventoryItem.id;
+    };
     AddSubAssemblyComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-AddSubAssembly',
             template: __webpack_require__(/*! ./AddSubAssembly.component.html */ "./src/app/manufacturing/AddSubAssembly/AddSubAssembly.component.html"),
             styles: [__webpack_require__(/*! ./AddSubAssembly.component.css */ "./src/app/manufacturing/AddSubAssembly/AddSubAssembly.component.css")]
         }),
+        __param(5, Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Inject"])(_angular_material__WEBPACK_IMPORTED_MODULE_1__["MAT_DIALOG_DATA"])),
         __metadata("design:paramtypes", [_angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormBuilder"], _angular_material__WEBPACK_IMPORTED_MODULE_1__["MatDialog"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormBuilder"],
-            _angular_material__WEBPACK_IMPORTED_MODULE_1__["MatDialogRef"]])
+            src_app_services_authentication_user_service__WEBPACK_IMPORTED_MODULE_6__["UserService"], _angular_material__WEBPACK_IMPORTED_MODULE_1__["MatDialogRef"], Object, _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormBuilder"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormBuilder"]])
     ], AddSubAssemblyComponent);
     return AddSubAssemblyComponent;
 }());
@@ -4430,7 +4482,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div>\r\n  <div class=\"row\">\r\n    <div class=\"col-sm-11\">\r\n\r\n      <b>BOM Design</b>\r\n\r\n    </div>\r\n    <div class=\"col-sm-1\">\r\n      <i class=\"fa fa-times\" style=\"float:right; cursor: pointer;\" (click)=\"closeDialog();\"></i>\r\n    </div>\r\n  </div>\r\n</div>\r\n<hr/>\r\n<form fxLayout=\"column\"  style=\"border: solid 1px lightgrey;border-radius: 7px;\r\n    width: 500px ;float:left\" [formGroup]=\"form\" >\r\n      <br/>\r\n      <h3 style=\"margin-left: 100px;\">Add Assembly</h3>\r\n      <div formArrayName=\"assemblies\"\r\n        *ngFor=\"let item of form.controls['assemblies'].controls; let i = index\">\r\n        <div [formGroupName]=\"i\">\r\n          <mat-form-field style=\"margin-left: 15px;margin-right: 5px;width: 300px;\">\r\n            <input type=\"text\"  matInput formControlName=\"assembly\" placeholder=\"Enter Assembly\">\r\n            </mat-form-field>\r\n            <button mat-raised-button style=\"margin-left: 15px;\"  (click)=\"addSubAssembly(item)\">\r\n              <mat-icon>edit</mat-icon></button>\r\n            <button mat-raised-button style=\"margin-left: 15px;\"\r\n             type=\"button\" (click)=\"deleteRow(i)\"><mat-icon>delete</mat-icon></button>\r\n        </div>\r\n      </div>\r\n      <button mat-raised-button type=\"button\" style=\"margin-left: 25px;width: 400px;margin-bottom: 10px;\"\r\n      (click)=\"addNext()\"><mat-icon>add</mat-icon>Add Next Assembly</button>\r\n    </form>\r\n<button style=\"margin-top: 5%;margin-left: 26%;width: 50%;\" mat-raised-button  (click)=\"saveAssembly()\">\r\n  Save Assembly</button><br />\r\n"
+module.exports = "<div>\n  <div class=\"row\">\n    <div class=\"col-sm-11\">\n\n      <b>BOM Design</b>\n\n    </div>\n    <div class=\"col-sm-1\">\n      <i class=\"fa fa-times\" style=\"float:right; cursor: pointer;\" (click)=\"closeDialog();\"></i>\n    </div>\n  </div>\n</div>\n<hr/>\n<form fxLayout=\"column\"  style=\"border: solid 1px lightgrey;border-radius: 7px;\n    width: 500px ;float:left\" [formGroup]=\"form\" >\n      <br/>\n      <h3 style=\"margin-left: 100px;\">Add Assembly</h3>\n      <div formArrayName=\"assemblies\"\n        *ngFor=\"let item of form.controls['assemblies'].controls; let i = index\">\n        <div [formGroupName]=\"i\">\n          <mat-form-field style=\"margin-left: 15px;margin-right: 5px;width: 300px;\">\n            <input type=\"text\"  matInput formControlName=\"assembly\" placeholder=\"Enter Assembly\">\n            </mat-form-field>\n            <button mat-raised-button style=\"margin-left: 15px;\"  (click)=\"addSubAssembly(item)\">\n              <mat-icon>edit</mat-icon></button>\n            <button mat-raised-button style=\"margin-left: 15px;\"\n             type=\"button\" (click)=\"deleteRow(i)\"><mat-icon>delete</mat-icon></button>\n        </div>\n      </div>\n      <button mat-raised-button type=\"button\" style=\"margin-left: 25px;width: 400px;margin-bottom: 10px;\"\n      (click)=\"addNext()\"><mat-icon>add</mat-icon>Add Next Assembly</button>\n    </form>\n<button style=\"margin-top: 5%;margin-left: 26%;width: 50%;\" mat-raised-button  (click)=\"saveAssembly()\">\n  Save Assembly</button><br />\n"
 
 /***/ }),
 
@@ -4448,6 +4500,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
 /* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
 /* harmony import */ var _AddSubAssembly_AddSubAssembly_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../AddSubAssembly/AddSubAssembly.component */ "./src/app/manufacturing/AddSubAssembly/AddSubAssembly.component.ts");
+/* harmony import */ var src_app_services_authentication_user_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/app/services/authentication/user.service */ "./src/app/services/authentication/user.service.ts");
+/* harmony import */ var src_app_services_api_urls__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! src/app/services/api.urls */ "./src/app/services/api.urls.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -4461,10 +4515,13 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 
 
+
+
 var ConfigureDesignComponent = /** @class */ (function () {
-    function ConfigureDesignComponent(fb, dialogRef, snackBar, dialog, fbItem) {
+    function ConfigureDesignComponent(fb, dialogRef, userService, snackBar, dialog, fbItem) {
         this.fb = fb;
         this.dialogRef = dialogRef;
+        this.userService = userService;
         this.snackBar = snackBar;
         this.dialog = dialog;
         this.fbItem = fbItem;
@@ -4475,8 +4532,33 @@ var ConfigureDesignComponent = /** @class */ (function () {
         });
     };
     ConfigureDesignComponent.prototype.addAssembly = function () {
-        this.dialog.open(_AddSubAssembly_AddSubAssembly_component__WEBPACK_IMPORTED_MODULE_3__["AddSubAssemblyComponent"], {
-            width: '550px',
+        var _this = this;
+        var value = { name: this.form.value.assemblies[0].assembly };
+        this.userService.authenticatedPost(src_app_services_api_urls__WEBPACK_IMPORTED_MODULE_5__["ApiUrls"].GetModel('assembly'), JSON.stringify(value), {}).subscribe(function (res) {
+            _this.snackBar.open('Assembly Added !', 'X', {
+                duration: 4000,
+                panelClass: ['success-snackbar'],
+                verticalPosition: 'top'
+            });
+            _this.dialogRef.close();
+            //  this.assemblyId = res.data.id;
+            console.log(res);
+        }, function (err) {
+            _this.dialog.open(_AddSubAssembly_AddSubAssembly_component__WEBPACK_IMPORTED_MODULE_3__["AddSubAssemblyComponent"], {
+                width: '550px'
+                // data: {
+                //   assemblyId: res.data.id,
+                //   assemblyName: this.assemblyName,
+                //   res: res
+                // }
+            });
+            console.log('Error occured');
+            console.log(err);
+            _this.snackBar.open('Assembly creation failed !', 'X', {
+                duration: 4000,
+                panelClass: ['error-snackbar'],
+                verticalPosition: 'top'
+            });
         });
     };
     ConfigureDesignComponent.prototype.deleteRow = function (index) {
@@ -4494,11 +4576,11 @@ var ConfigureDesignComponent = /** @class */ (function () {
         this.dialogRef.close();
     };
     ConfigureDesignComponent.prototype.addSubAssembly = function (item) {
-        localStorage.setItem('assemblyName', item.value.assembly);
+        this.assemblyName = item.value.assembly;
+        localStorage.setItem('assemblyName', this.assemblyName);
         this.addAssembly();
     };
     ConfigureDesignComponent.prototype.saveAssembly = function () {
-        console.log(this.form.value);
     };
     ConfigureDesignComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -4506,7 +4588,7 @@ var ConfigureDesignComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./configureDesign.component.html */ "./src/app/manufacturing/configureDesign/configureDesign.component.html"),
             styles: [__webpack_require__(/*! ./configureDesign.component.css */ "./src/app/manufacturing/configureDesign/configureDesign.component.css")]
         }),
-        __metadata("design:paramtypes", [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"], _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatDialogRef"],
+        __metadata("design:paramtypes", [_angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"], _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatDialogRef"], src_app_services_authentication_user_service__WEBPACK_IMPORTED_MODULE_4__["UserService"],
             _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatSnackBar"], _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatDialog"], _angular_forms__WEBPACK_IMPORTED_MODULE_1__["FormBuilder"]])
     ], ConfigureDesignComponent);
     return ConfigureDesignComponent;
@@ -5024,7 +5106,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!-- <form class=\"registration-form\" [formGroup]=\"registrationForm\" #form=\"ngForm\">\r\n    \r\n      \r\n        <div class=\"form-group\">\r\n          <mat-form-field *ngFor=\"let component of components\">\r\n            <p>{{component}}</p>\r\n            <input matInput type=\"number\" formControlName=\"quantityAmount\" name=\"quantityAmount\" id=\"quantityAmount\">\r\n          </mat-form-field>\r\n          </div>\r\n        <!-- <div class=\"form-group\">\r\n          <mat-form-field>\r\n            <input matInput type=\"file\" placeholder=\"Invoice\" >\r\n          </mat-form-field>\r\n          </div> \r\n          <div class=\"button-row\" style=\"margin-bottom: 5px\"> <button mat-button color=\"accent\" mat-mini-fab\r\n            (click)=\"imgFileInput.click()\"><mat-icon style=\"margin-right:10px\">attachment</mat-icon></button>\r\n            <input hidden type=\"file\" #imgFileInput (change)=\"previewImage($event)\" /> Upload Invoice</div>\r\n  <div class=\"form-group\">\r\n    <button type=\"button\" class=\"login-btn btn btn-outline-dark btn-block\"\r\n    (click)=\"registerInventoryItem(registrationForm.value, form)\">Register</button>\r\n</div>\r\n</form> -->\r\n<form fxLayout=\"column\"  style=\"border: solid 1px lightgrey;border-radius: 7px;\r\n    width: 700px ;float:left\" [formGroup]=\"form\" >\r\n      <br/>\r\n      <div class=\"form-group\">\r\n          <mat-form-field>\r\n            <mat-label>Subassembly</mat-label>\r\n            <mat-select formControlName=\"subAssembly\" >\r\n              <mat-option  *ngFor=\"let subAssembly of subAssemblies\" [value]=\"subAssembly\">\r\n                {{subAssembly}}\r\n              </mat-option>\r\n            </mat-select>\r\n          </mat-form-field>\r\n          </div>\r\n      <h3 style=\"margin-left: 100px;\">Add Component</h3>\r\n      <div formArrayName=\"components\"\r\n        *ngFor=\"let item of form.controls['components'].controls; let i = index\">\r\n        <div [formGroupName]=\"i\">\r\n          <mat-form-field style=\"margin-left: 20px;\">\r\n            <input matInput placeholder=\"Name\"  formControlName=\"name\" name=\"Name\" id=\"Name\">\r\n          </mat-form-field>\r\n          <mat-form-field style=\"margin-left: 20px;\">\r\n            <input matInput placeholder=\"Produced Quantity\" formControlName=\"producedQuantity\" name=\"producedQuantity\" id=\"producedQuantity\">\r\n          </mat-form-field>\r\n          \r\n        </div>\r\n      </div>\r\n      <div class=\"form-group\">\r\n      <mat-form-field>\r\n          <input matInput type=\"text\" formControlName=\"output\" placeholder=\"Output\" >\r\n        </mat-form-field>\r\n      <div >\r\n        </div> \r\n        <div class=\"form-group\">\r\n            <mat-form-field>\r\n                <input matInput type=\"text\" formControlName=\"waste\" placeholder=\"Waste\" >\r\n              </mat-form-field>\r\n            </div >\r\n            <div class=\"form-group\">\r\n                <mat-form-field>\r\n                    <input matInput type=\"date\" formControlName=\"startDate\" placeholder=\"Start Date\" >\r\n                  </mat-form-field>\r\n                </div >     \r\n      <button mat-raised-button type=\"button\" style=\"margin-left: 25px;width: 350px;margin-bottom: 10px;\"\r\n      (click)=\"save()\"><mat-icon>save</mat-icon>Save Components</button>\r\n    \r\n  </div>\r\n    </form>"
+module.exports = "<!-- <form class=\"registration-form\" [formGroup]=\"registrationForm\" #form=\"ngForm\">\n    \n      \n        <div class=\"form-group\">\n          <mat-form-field *ngFor=\"let component of components\">\n            <p>{{component}}</p>\n            <input matInput type=\"number\" formControlName=\"quantityAmount\" name=\"quantityAmount\" id=\"quantityAmount\">\n          </mat-form-field>\n          </div>\n        <!-- <div class=\"form-group\">\n          <mat-form-field>\n            <input matInput type=\"file\" placeholder=\"Invoice\" >\n          </mat-form-field>\n          </div> \n          <div class=\"button-row\" style=\"margin-bottom: 5px\"> <button mat-button color=\"accent\" mat-mini-fab\n            (click)=\"imgFileInput.click()\"><mat-icon style=\"margin-right:10px\">attachment</mat-icon></button>\n            <input hidden type=\"file\" #imgFileInput (change)=\"previewImage($event)\" /> Upload Invoice</div>\n  <div class=\"form-group\">\n    <button type=\"button\" class=\"login-btn btn btn-outline-dark btn-block\"\n    (click)=\"registerInventoryItem(registrationForm.value, form)\">Register</button>\n</div>\n</form> -->\n<form fxLayout=\"column\"  style=\"border: solid 1px lightgrey;border-radius: 7px;\n    width: 700px ;float:left\" [formGroup]=\"form\" >\n      <br/>\n      <div class=\"form-group\">\n          <mat-form-field>\n            <mat-label>Subassembly</mat-label>\n            <mat-select formControlName=\"subAssembly\" >\n              <mat-option  *ngFor=\"let subAssembly of subAssemblies\" [value]=\"subAssembly\">\n                {{subAssembly}}\n              </mat-option>\n            </mat-select>\n          </mat-form-field>\n          </div>\n      <h3 style=\"margin-left: 100px;\">Add Component</h3>\n      <div formArrayName=\"components\"\n        *ngFor=\"let item of form.controls['components'].controls; let i = index\">\n        <div [formGroupName]=\"i\">\n          <mat-form-field style=\"margin-left: 20px;\">\n            <input matInput placeholder=\"Name\"  formControlName=\"name\" name=\"Name\" id=\"Name\">\n          </mat-form-field>\n          <mat-form-field style=\"margin-left: 20px;\">\n            <input matInput placeholder=\"Produced Quantity\" formControlName=\"producedQuantity\" name=\"producedQuantity\" id=\"producedQuantity\">\n          </mat-form-field>\n          \n        </div>\n      </div>\n      <div class=\"form-group\">\n      <mat-form-field>\n          <input matInput type=\"text\" formControlName=\"output\" placeholder=\"Output\" >\n        </mat-form-field>\n      <div >\n        </div> \n        <div class=\"form-group\">\n            <mat-form-field>\n                <input matInput type=\"text\" formControlName=\"waste\" placeholder=\"Waste\" >\n              </mat-form-field>\n            </div >\n            <div class=\"form-group\">\n                <mat-form-field>\n                    <input matInput type=\"date\" formControlName=\"startDate\" placeholder=\"Start Date\" >\n                  </mat-form-field>\n                </div >     \n      <button mat-raised-button type=\"button\" style=\"margin-left: 25px;width: 350px;margin-bottom: 10px;\"\n      (click)=\"save()\"><mat-icon>save</mat-icon>Save Components</button>\n    \n  </div>\n    </form>"
 
 /***/ }),
 
@@ -5825,7 +5907,7 @@ var ViewProcessComponent = /** @class */ (function () {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ApiUrls", function() { return ApiUrls; });
 var host = 'sm.clients.ravinderpayal.com'; // 'localhost:9000'; //
-var host2 = '34.93.167.62'; // '34.93.101.49';
+var host2 = '34.93.107.207'; // '34.93.101.49';
 var append = 'http://' + host2 + '/v1/';
 var appendNew = 'http://' + host2 + '/v1/';
 var adminAppend = 'http://' + host2 + '/v1/';
